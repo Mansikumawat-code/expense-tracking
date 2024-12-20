@@ -1,0 +1,214 @@
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #6200ea;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#theme-toggle {
+    background: #3700b3;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#theme-toggle:hover {
+    background: #bb86fc;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: #333;
+    color: #040404; /* Adjust this color to a slightly darker shade of text */
+}
+
+
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
+#expense-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, select, button {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+button {
+    background: #6200ea;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #3700b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Expense List */
+#expense-list {
+    margin-top: 2rem;
+}
+
+#expense-list h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#expenses {
+    list-style: none;
+    padding: 0;
+}
+
+#expenses li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 0.8rem;
+    margin: 0.8rem 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#expenses li button {
+    background: #ff5c5c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#expenses li button:hover {
+    background: #ff2a2a;
+}
+
+/* Expense Summary */
+#expense-summary {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+#expense-summary p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Expense Chart Section */
+#expense-chart {
+    margin-top: 2rem;
+}
+
+canvas {
+    max-width: 100%;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #6200ea;
+    color: #fff;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    #theme-toggle {
+        margin-top: 1rem;
+    }
+
+    form {
+        gap: 0.8rem;
+    }
+
+    input, select, button {
+        font-size: 1rem;
+    }
+
+    #expenses li {
+        font-size: 0.9rem;
+    }
+}
